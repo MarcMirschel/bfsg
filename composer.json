@@ -1,0 +1,35 @@
+{
+    "name": "zoobrothers/bfsg-scanner",
+    "description": "CLI\u2011 und Web\u2011Tool zur automatisierten BFSG/WCAG\u2011Analyse.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "laravel/framework": "^12.0",
+        "spatie/laravel-web-crawler": "^4.0",
+        "cidilabs/phpally": "^1.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.0",
+        "phpstan/phpstan": "^1.11",
+        "laravel/pint": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\\\": "app/"
+        }
+    },
+    "scripts": {
+        "analyse": [
+            "phpstan analyse"
+        ],
+        "lint": [
+            "pint"
+        ],
+        "test": [
+            "phpunit"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
